@@ -61,18 +61,18 @@
   &trans          &trans        &trans        &trans        &trans    &trans       &trans        &trans    &trans     &trans    &trans    &trans
   &kp UNDER       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4    &kp N5       &kp NUMBER_6  &kp N7    &kp N8     &kp N9    &kp N0    &kp RIGHT_BRACKET
   &mt LCTRL PLUS  &kp EXCL      &kp AT        &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-  &mt LALT EQUAL  &kp N1        &kp N2        &kp N3        &kp N4    &kp N5       &kp N6        &kp N7    &kp N8     &kp N9    &kp N0    &kp EQUAL
+  &mt LALT EQUAL  &kp N1        &kp N2        &kp N3        &kp N4    &kp N5       &kp N6        &kp N7    &kp N8     &kp N9    &to 2     &kp EQUAL
                                 &trans        &lt 3 RET     &trans    &trans       &trans        &trans    &lt 3 RET  &trans
             >;
         };
 
         raise_layer {
             bindings = <
-  &trans           &trans           &trans     &trans     &trans     &trans          &trans     &trans            &trans             &trans           &trans           &trans
-  &kp ESC          &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &trans     &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PAUSE_BREAK  &kp CAPS
-  &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp LEFT   &kp DOWN          &kp UP             &kp RIGHT        &kp SCROLLLOCK   &mt RCTRL K_APP
-  &kp LG(SPACE)    &kp KP_N0        &trans     &trans     &trans     &kp KP_DOT      &trans     &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &trans           &to 2
-                                    &trans     &trans     &trans     &lt 3 TAB       &lt 3 ESC  &trans            &trans             &trans
+  &trans           &trans           &trans     &trans     &trans     &trans          &trans        &trans            &trans             &trans           &trans           &trans
+  &kp ESC          &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS    &trans        &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PAUSE_BREAK  &kp AT_SIGN
+  &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS     &kp LEFT      &kp DOWN          &kp UP             &kp RIGHT        &kp SCROLLLOCK   &mt RCTRL K_APP
+  &kp LG(SPACE)    &kp KP_N0        &trans     &trans     &trans     &kp KP_DOT      &kp CAPSLOCK  &kp C_PLAY_PAUSE  &kp C_PREV         &kp C_NEXT       &trans           &to 0
+                                    &trans     &trans     &trans     &lt 3 TAB       &lt 3 ESC     &trans            &trans             &trans
             >;
         };
 
