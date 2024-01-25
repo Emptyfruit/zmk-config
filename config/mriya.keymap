@@ -31,6 +31,27 @@
             bindings = <&kp LCMD &kp SPACE>;
             label = "CMD_SPACE";
         };
+
+        cyr_at: cyr_at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp AT &kp LG(SPACE)>;
+            label = "CYR_AT";
+        };
+
+        cyr_hash: cyr_hash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp HASH &kp LG(SPACE)>;
+            label = "CYR_HASH";
+        };
+
+        cyr_pipe: cyr_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp PIPE &kp LG(SPACE)>;
+            label = "CYR_PIPE";
+        };
     };
 
     combos {
@@ -58,11 +79,11 @@
 
         lower_layer {
             bindings = <
-  &trans          &trans        &trans        &trans           &trans    &trans       &trans        &trans    &trans     &trans    &trans    &trans
-  &kp UNDER       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp N4    &kp N5       &kp NUMBER_6  &kp N7    &kp N8     &kp N9    &kp N0    &kp RIGHT_BRACKET
-  &mt LCTRL PLUS  &kp EXCL      &kp AT        &kp HASH         &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-  &mt LALT EQUAL  &kp N1        &kp AT_SIGN   &kp NON_US_HASH  &kp N4    &kp N5       &kp N6        &kp N7    &kp N8     &kp N9    &to 2     &kp UNDERSCORE
-                                &trans        &lt 3 RET        &trans    &trans       &trans        &trans    &lt 3 RET  &trans
+  &trans          &trans        &trans        &trans        &trans     &trans       &trans        &trans    &trans     &trans    &trans    &trans
+  &kp UNDER       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4     &kp N5       &kp NUMBER_6  &kp N7    &kp N8     &kp N9    &kp N0    &kp RIGHT_BRACKET
+  &mt LCTRL PLUS  &kp EXCL      &kp AT        &kp HASH      &kp DLLR   &kp PRCNT    &kp CARET     &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
+  &mt LALT EQUAL  &kp N1        &cyr_at       &cyr_hash     &cyr_pipe  &kp N5       &kp N6        &kp N7    &kp N8     &kp N9    &to 2     &kp UNDERSCORE
+                                &trans        &lt 3 RET     &trans     &trans       &trans        &trans    &lt 3 RET  &trans
             >;
         };
 
