@@ -52,6 +52,20 @@
             bindings = <&kp LG(SPACE) &kp PIPE &kp LG(SPACE)>;
             label = "CYR_PIPE";
         };
+
+        cyr_l_brace: cyr_l_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp LEFT_BRACE &kp LG(SPACE)>;
+            label = "CYR_L_BRACE";
+        };
+
+        cyr_right_brace: cyr_right_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &kp RIGHT_BRACE &kp LG(SPACE)>;
+            label = "CYR_RIGHT_BRACE";
+        };
     };
 
     combos {
