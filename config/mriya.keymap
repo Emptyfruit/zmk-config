@@ -79,11 +79,11 @@
 
         lower_layer {
             bindings = <
-  &trans           &trans        &trans        &trans        &trans     &trans       &trans          &trans           &trans     &trans    &trans    &trans
-  &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4     &kp N5       &kp NUMBER_6    &kp N7           &kp N8     &kp N9    &kp N0    &kp RIGHT_BRACKET
-  &mt LCTRL EQUAL  &kp EXCL      &kp AT        &kp HASH      &kp DLLR   &kp PRCNT    &kp CARET       &kp AMPS         &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-  &mt LALT PLUS    &kp N1        &cyr_at       &cyr_hash     &cyr_pipe  &kp EQUAL    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp N8     &kp N9    &to 2     &kp UNDERSCORE
-                                 &trans        &lt 3 RET     &trans     &trans       &trans          &trans           &lt 3 RET  &trans
+  &trans           &trans        &trans        &trans        &trans     &trans       &trans          &trans           &trans          &trans    &trans    &trans
+  &kp UNDER        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N4     &kp N5       &kp NUMBER_6    &kp N7           &kp N8          &kp N9    &kp N0    &kp RIGHT_BRACKET
+  &mt LCTRL EQUAL  &kp EXCL      &kp AT        &kp HASH      &kp DLLR   &kp PRCNT    &kp CARET       &kp AMPS         &kp STAR        &kp LPAR  &kp RPAR  &mt RCTRL MINUS
+  &mt LALT PLUS    &kp N1        &cyr_at       &cyr_hash     &cyr_pipe  &kp EQUAL    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(LA(N8))  &kp N9    &to 2     &kp UNDERSCORE
+                                 &trans        &lt 3 RET     &trans     &trans       &trans          &trans           &lt 3 RET       &trans
             >;
         };
 
